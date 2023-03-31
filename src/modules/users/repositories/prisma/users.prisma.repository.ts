@@ -57,6 +57,6 @@ export class UsersPrismaRepository implements UsersRepository {
       where: { email },
     });
 
-    return plainToInstance(User, user);
+    return user;
   }
 }
